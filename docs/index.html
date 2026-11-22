@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Прицел — кому вы обещали перезвонить</title>
+<meta name="description" content="ИИ разбирает звонки отдела продаж, сверяет с CRM и два раза в день присылает список клиентов, которым обещали замер или перезвон. Первый разбор 10 звонков бесплатно.">
+<link rel="canonical" href="https://pricel-ai.ru/">
+<meta name="theme-color" content="#0B0A09">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Прицел">
+<meta property="og:title" content="Прицел — клиенты, которым обещали замер и забыли">
+<meta property="og:description" content="Два раза в день список: кому позвонить сегодня. С цитатой из разговора и временем. Разбор 10 звонков бесплатно.">
+<meta property="og:url" content="https://pricel-ai.ru/">
+<meta property="og:image" content="https://pricel-ai.ru/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/unbounded-cyrillic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/onest-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mark" viewBox="0 0 40 40">
+      <rect width="40" height="40" rx="9" fill="#14120F" stroke="#2E2924"/>
+      <circle cx="20" cy="20" r="11" fill="none" stroke="#EDE8E1" stroke-width="2.4"/>
+      <path d="M20 4.5v7M20 28.5v7M4.5 20h7M28.5 20h7" fill="none" stroke="#EDE8E1" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M20 20l4.5-4.5M20 20l-4.5 4.5" fill="none" stroke="#FF6B00" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="24.5" cy="15.5" r="1.7" fill="#FF6B00"/>
+      <circle cx="15.5" cy="24.5" r="1.7" fill="#FF6B00"/>
+      <circle cx="20" cy="20" r="3" fill="#FF6B00"/>
+    </symbol>
+    <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21.4 4.3 2.9 11.4c-1 .4-1 1.6 0 1.9l4.6 1.5 1.8 5.5c.2.7 1.1.9 1.6.4l2.6-2.5 4.6 3.4c.6.5 1.5.1 1.7-.6l3.2-14.8c.2-.9-.7-1.7-1.6-1.3ZM9.6 14.4l8.5-6.9-6.6 8.2-.3 3-1.6-4.3Z" fill="currentColor"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5 10 17.5 19 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Прицел, на главную">
+      <svg aria-hidden="true"><use href="#mark"/></svg>
+      <div><b>Прицел</b><span>ИИ-аналитика</span></div>
+    </a>
+    <a class="btn btn-ghost" href="https://t.me/Maxim_0o0" target="_blank" rel="noopener">
+      <svg aria-hidden="true"><use href="#i-tg"/></svg><span>Написать в Telegram</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1. Первый экран -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <h1 id="h1">Клиенты, которым обещали <em>замер</em> и&nbsp;забыли</h1>
+        <p class="lead">Прицел слушает звонки отдела продаж, сверяет их с&nbsp;CRM и&nbsp;два раза в&nbsp;день присылает список: кому позвонить сегодня. С&nbsp;цитатой из разговора и&nbsp;временем.</p>
+        <div class="hero-cta">
+          <a class="btn btn-main" href="https://t.me/Maxim_0o0" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-tg"/></svg>Разобрать 10 звонков бесплатно
+          </a>
+          <span class="hero-note">Без договора. Отвечаем в Telegram в рабочее время</span>
+        </div>
+        <div class="proof">
+          <span><b>20 из 20</b> звонков ИИ разобрал без ошибки в итоге</span>
+          <span><b>Москва и МО</b> · ремонт, окна, кухни, кровля</span>
+        </div>
+      </div>
+
+      <div class="live" id="live">
+        <div class="live-card" aria-label="Пример строки из отчёта">
+          <div class="live-meta mono step"><span class="tag">Пример из отчёта</span><span class="num">звонок 21.11, 10:12</span></div>
+          <div class="live-who step">Ирина, ремонт квартиры 64&nbsp;м²<small>входящий звонок с рекламы</small></div>
+          <div class="utt step"><span class="tc num">01:47</span><p><span class="role">Клиент:</span> «Да, <span class="hl" data-hl>замер нужен</span>, лучше на&nbsp;этой неделе».</p></div>
+          <div class="utt step"><span class="tc num">02:14</span><p><span class="role">Менеджер:</span> «<span class="hl" data-hl id="promise">Перезвоню до&nbsp;13:00</span> и&nbsp;согласуем время».</p></div>
+          <div class="crm step">В CRM: ни перезвона, ни замера</div>
+          <div class="todo step"><b>Позвонить сегодня до 12:00</b><span>Предложить два свободных окна для замера</span></div>
+          <button class="replay" type="button" id="replay" hidden>Повторить</button>
+          <svg class="reticle" id="reticle" viewBox="0 0 44 44" aria-hidden="true">
+            <g class="ring"><circle cx="22" cy="22" r="15" fill="none" stroke="#FF6B00" stroke-width="2"/>
+            <path d="M22 2v9M22 33v9M2 22h9M33 22h9" stroke="#FF6B00" stroke-width="2" stroke-linecap="round"/></g>
+            <circle cx="22" cy="22" r="3" fill="#FFB547"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Цена одного забытого клиента -->
+  <section class="cost" id="cost" aria-labelledby="cost-h">
+    <div class="wrap">
+      <div class="cost-copy">
+        <h2 id="cost-h">Каждый такой звонок вы уже оплатили рекламой</h2>
+        <p class="lead">Клиент позвонил, захотел замер и&nbsp;ждёт. Менеджер пообещал перезвонить и&nbsp;закрутился. Через день клиент звонит конкурентам. Вы теряете не звонок, а&nbsp;замер и&nbsp;деньги, которые за ним стоят.</p>
+        <p class="lead">Выберите свою нишу и&nbsp;посмотрите, сколько приносит один состоявшийся замер. Точные цифры вашей компании посчитаем вместе на&nbsp;разборе.</p>
+      </div>
+      <div class="cost-panel">
+        <div class="seg" role="group" aria-label="Ниша">
+          <button type="button" aria-pressed="true" data-v="29714" data-f="чек <b>1&nbsp;300&nbsp;000&nbsp;₽</b> × маржа <b>12%</b> × договор после <b>19%</b> замеров">Ремонт квартир</button>
+          <button type="button" aria-pressed="false" data-v="20811" data-f="чек <b>290&nbsp;000&nbsp;₽</b> × маржа <b>30%</b> × договор после <b>24%</b> замеров">Кухни</button>
+          <button type="button" aria-pressed="false" data-v="17500" data-f="чек <b>350&nbsp;000&nbsp;₽</b> × маржа <b>20%</b> × договор после <b>25%</b> замеров">Отопление дома</button>
+          <button type="button" aria-pressed="false" data-v="9000" data-f="чек <b>90&nbsp;000&nbsp;₽</b> × маржа <b>25%</b> × договор после <b>40%</b> замеров">Окна</button>
+          <button type="button" aria-pressed="false" data-v="7500" data-f="чек <b>75&nbsp;000&nbsp;₽</b> × маржа <b>25%</b> × договор после <b>40%</b> замеров">Двери</button>
+          <button type="button" aria-pressed="false" data-v="5400" data-f="чек <b>45&nbsp;000&nbsp;₽</b> × маржа <b>30%</b> × договор после <b>40%</b> замеров">Натяжные потолки</button>
+        </div>
+        <div class="value">
+          <span class="value-label">Сколько приносит один состоявшийся замер</span>
+          <div class="value-num num" aria-live="polite"><span class="roll" id="roll" data-value="29714">29 714</span><span class="rub">₽</span></div>
+          <p class="formula mono" id="formula">чек <b>1&nbsp;300&nbsp;000&nbsp;₽</b> × маржа <b>12%</b> × договор после <b>19%</b> замеров</p>
+        </div>
+        <p class="compare">Подписка на Прицел стоит от&nbsp;<b>25&nbsp;000&nbsp;₽ в&nbsp;месяц</b>. Сравните с&nbsp;ценой одного замера в&nbsp;вашей нише.</p>
+        <p class="footnote">Оценка по открытым публикациям рынка, ноябрь 2026. Маржа и&nbsp;доля договоров в&nbsp;вашей компании могут отличаться.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Как это работает -->
+  <section class="how" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="how-h">Как это работает</h2>
+        <p class="lead">Вам не нужно ничего внедрять. Нужны записи звонков и&nbsp;выгрузка сделок из&nbsp;CRM.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="n">1</span>
+          <h3>Вы даёте записи звонков</h3>
+          <p>Ссылку на&nbsp;записи в&nbsp;телефонии или папку с&nbsp;файлами. И&nbsp;выгрузку сделок из CRM за те же дни.</p>
+          <span class="mono">Mango · Zadarma · Sipuni · Битрикс24 · amoCRM · mp3</span>
+        </li>
+        <li>
+          <span class="n">2</span>
+          <h3>ИИ находит обещания</h3>
+          <p>Где клиент хотел замер и&nbsp;что пообещал менеджер. У&nbsp;каждой находки цитата и&nbsp;время в&nbsp;записи, чтобы проверить за&nbsp;10&nbsp;секунд.</p>
+          <span class="mono">имена и телефоны скрыты до анализа</span>
+        </li>
+        <li>
+          <span class="n">3</span>
+          <h3>Два раза в день список «кому позвонить»</h3>
+          <p>Сверяем с&nbsp;CRM: был ли перезвон, назначен ли замер. В&nbsp;отчёт попадают только те, кого ещё можно вернуть.</p>
+          <span class="mono">PDF-отчёт 2 раза в день</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 4. Пример отчёта -->
+  <section class="sample" id="sample" aria-labelledby="sample-h">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:0">
+        <h2 id="sample-h">Так выглядит отчёт</h2>
+        <p class="lead">Не оценки менеджеров и&nbsp;не&nbsp;графики. Только клиенты, которым сегодня нужно позвонить, и&nbsp;доказательства.</p>
+        <div class="sample-points">
+          <div><svg aria-hidden="true"><use href="#i-check"/></svg><p><b>Цитата и время</b>Каждую находку можно проверить по&nbsp;записи.</p></div>
+          <div><svg aria-hidden="true"><use href="#i-check"/></svg><p><b>Статус в CRM</b>Видно, был ли перезвон и&nbsp;назначен ли замер.</p></div>
+          <div><svg aria-hidden="true"><use href="#i-check"/></svg><p><b>Действие на сегодня</b>Что сказать клиенту и&nbsp;до какого времени.</p></div>
+        </div>
+      </div>
+      <div class="sheet" aria-label="Пример отчёта">
+        <div class="sheet-head">
+          <div class="sheet-brand"><svg aria-hidden="true"><use href="#mark"/></svg><div><b>Прицел</b><span>кому вы обещали перезвонить</span></div></div>
+          <div class="sheet-date"><b class="num">Отчёт 22.11, 13:00</b>звонки 21–22.11</div>
+        </div>
+        <div class="sheet-stats">
+          <div class="hot"><b class="num">3</b>позвонить сегодня</div>
+          <div><b class="num">2</b>проверить обещание</div>
+          <div><b class="num">41</b>звонок без действий</div>
+        </div>
+        <div class="s-card">
+          <div class="s-row"><b>Ирина, ремонт 64 м²</b><span class="num">21.11, 10:12</span></div>
+          <div class="s-act">Позвонить до 12:00: предложить два окна для замера</div>
+          <div class="s-quote"><span class="tc num">01:47</span>«Да, замер нужен, лучше на этой неделе»</div>
+          <div class="s-facts"><span>Обещано: перезвонить до 13:00</span><span class="warn">В CRM: нет звонка</span></div>
+        </div>
+        <div class="s-card promise">
+          <div class="s-row"><b>Олег, окна в частный дом</b><span class="num">20.11, 16:40</span></div>
+          <div class="s-act">Проверить: обещали прислать расчёт завтра</div>
+          <div class="s-quote"><span class="tc num">03:05</span>«Пришлите расчёт, я сравню и решу»</div>
+          <div class="s-facts"><span>Обещано: расчёт 21.11</span><span class="warn">В CRM: расчёт не отправлен</span></div>
+        </div>
+        <p class="sheet-note">Пример отчёта. Отчёт приходит в PDF два раза в день.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Данные -->
+  <section class="data" id="data" aria-labelledby="data-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="data-h">Записи ваших клиентов остаются под защитой</h2>
+      </div>
+      <div class="data-grid">
+        <div>
+          <svg viewBox="0 0 28 28" aria-hidden="true"><rect x="3" y="5" width="22" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 23h8M14 19v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <h3>Речь распознаём у себя</h3>
+          <p>Аудио превращается в&nbsp;текст на&nbsp;нашем компьютере. Записи не&nbsp;уходят в&nbsp;облачные сервисы распознавания.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 28 28" aria-hidden="true"><rect x="4" y="12" width="20" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 12V9a5 5 0 0 1 10 0v3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <h3>Имена и телефоны скрыты</h3>
+          <p>До анализа ИИ заменяем имена, телефоны, адреса и&nbsp;названия компаний на&nbsp;метки. В&nbsp;отчёт для вас данные возвращаются на&nbsp;место.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M6 8h16M11 8V5h6v3M8 8l1 15h10l1-15" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <h3>Удаляем по вашему слову</h3>
+          <p>После пилота записи и&nbsp;расшифровки удаляются по&nbsp;вашему запросу. Условия фиксируем в&nbsp;договоре.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Цена -->
+  <section class="price" id="price" aria-labelledby="price-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="price-h">Начните с бесплатного разбора</h2>
+        <p class="lead">Сначала смотрим ваши звонки. Платить имеет смысл, только если в&nbsp;них нашлись клиенты, которых можно вернуть.</p>
+      </div>
+      <div class="ladder">
+        <div class="rung free">
+          <div class="price"><span class="p">0&nbsp;₽</span><small>разбор 10 звонков</small></div>
+          <ul>
+            <li>Берём 10 ваших вчерашних входящих</li>
+            <li>Показываем, кому обещали перезвонить или назначить замер</li>
+            <li>Цитата и время по каждой находке</li>
+          </ul>
+          <a class="btn btn-main" href="https://t.me/Maxim_0o0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg>Записаться на разбор</a>
+        </div>
+        <div class="rung">
+          <div class="price"><span class="p">20&nbsp;000&nbsp;₽</span><small>пилот на месяц</small></div>
+          <ul>
+            <li>До 100 звонков за выбранный период</li>
+            <li>Два отчёта в день «кому позвонить»</li>
+            <li>Итог: сколько клиентов вернули на замер</li>
+          </ul>
+        </div>
+        <div class="rung">
+          <div class="price"><span class="p">от&nbsp;25&nbsp;000&nbsp;₽</span><small>подписка в месяц</small></div>
+          <ul>
+            <li>До 200 звонков: 25 000 ₽</li>
+            <li>До 300 звонков: 30 000 ₽</li>
+            <li>Список «кому позвонить» два раза в рабочий день</li>
+          </ul>
+        </div>
+      </div>
+      <p class="price-note">Цены для компаний Москвы и Московской области. Если звонков больше, посчитаем отдельно.</p>
+    </div>
+  </section>
+
+  <!-- 7. Вопросы -->
+  <section class="faq" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="faq-h">Частые вопросы</h2>
+        <p class="lead">Не нашли свой? Напишите в&nbsp;Telegram, ответим коротко и&nbsp;по&nbsp;делу.</p>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>У нас Битрикс уже оценивает звонки<span class="pm" aria-hidden="true"></span></summary>
+          <p>Оценка по скрипту показывает, как говорил менеджер. Мы показываем другое: кому обещали перезвонить или назначить замер, и было ли это сделано по данным CRM. Возьмём один и тот же день и сравним списки.</p>
+        </details>
+        <details>
+          <summary>РОП и так слушает звонки<span class="pm" aria-hidden="true"></span></summary>
+          <p>Пусть выберет вчерашнюю смену и составит свой список. Сравним его с нашим: совпадения, пропуски и сколько часов заняла ручная сверка.</p>
+        </details>
+        <details>
+          <summary>Мы не отдаём записи звонков<span class="pm" aria-hidden="true"></span></summary>
+          <p>Для начала покажем пример отчёта. Для разбора речь распознаётся на нашем компьютере, а имена, телефоны и адреса скрываются до анализа. Условия хранения и удаления фиксируем письменно.</p>
+        </details>
+        <details>
+          <summary>А если в 10 звонках ничего не найдётся?<span class="pm" aria-hidden="true"></span></summary>
+          <p>Так бывает. Тогда вы получите подтверждение, что менеджеры держат обещания, и ничего не заплатите. Бесплатный разбор ни к чему не обязывает.</p>
+        </details>
+        <details>
+          <summary>Это дорого<span class="pm" aria-hidden="true"></span></summary>
+          <p>Посчитаем на ваших цифрах: сколько приносит один замер и сколько замеров в месяц нужно вернуть, чтобы окупить подписку. Если не сходится, пилот вам не нужен, и мы так и скажем.</p>
+        </details>
+        <details>
+          <summary>С какими телефониями и CRM вы работаете?<span class="pm" aria-hidden="true"></span></summary>
+          <p>Записи: Mango, Zadarma, Sipuni, Битрикс24 или просто папка с файлами. CRM: amoCRM, Битрикс24 или выгрузка в Excel.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Финал -->
+  <section class="final" id="contact" aria-labelledby="final-h">
+    <div class="wrap">
+      <h2 id="final-h">Проверим 10 ваших вчерашних звонков</h2>
+      <p class="lead">Напишите в&nbsp;Telegram, договоримся о&nbsp;15&nbsp;минутах. Покажем, кому из&nbsp;ваших клиентов ещё можно позвонить сегодня.</p>
+      <a class="btn btn-main" href="https://t.me/Maxim_0o0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg>Разобрать 10 звонков бесплатно</a>
+      <div class="contacts">
+        <a href="https://t.me/Maxim_0o0" target="_blank" rel="noopener">Telegram<b>@Maxim_0o0</b></a>
+        <a href="tel:+79775894234">Телефон<b class="num">+7 977 589-42-34</b></a>
+        <span>Максим, основатель Прицела<b>Москва</b></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© Прицел, 2026</span>
+    <span>pricel-ai.ru</span>
+  </div>
+</footer>
+
+<div class="dock" id="dock">
+  <a class="btn btn-main" href="https://t.me/Maxim_0o0" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-tg"/></svg>Разобрать 10 звонков бесплатно</a>
+</div>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
